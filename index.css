@@ -8,6 +8,20 @@
   }
 }
 
+/* Status Badge */
+.status-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #F5F5F5;
+  color: #A0A0A0;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+}
+
 /* Custom CSS Variables */
 :root {
   --neon-orange: #FF5C00;
@@ -141,19 +155,41 @@
 .ring-1 {
   width: 240px;
   height: 240px;
-  border-color: var(--neon-green);
   opacity: 0.2;
   animation-duration: 15s;
+}
+
+.ring-1.happy {
+  border-color: var(--neon-green);
+}
+
+.ring-1.neutral {
+  border-color: #A0A0A0;
+}
+
+.ring-1.sad {
+  border-color: #FF1744;
 }
 
 .ring-2 {
   width: 270px;
   height: 270px;
-  border-color: var(--neon-green);
   opacity: 0.1;
   border-style: dashed;
   animation-duration: 25s;
   animation-direction: reverse;
+}
+
+.ring-2.happy {
+  border-color: var(--neon-green);
+}
+
+.ring-2.neutral {
+  border-color: #A0A0A0;
+}
+
+.ring-2.sad {
+  border-color: #FF1744;
 }
 
 @keyframes rotate-ring {
@@ -203,59 +239,60 @@
 
 /* Phase 2 - Header Styles */
 .header {
-  padding: 1.5rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #F5F5F5;
-  position: sticky;
-  top: 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  z-index: 100;
+  padding: 1.5rem 2rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  border-bottom: 1px solid #F5F5F5 !important;
+  position: sticky !important;
+  top: 0 !important;
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  z-index: 100 !important;
 }
 
 .logo-container {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
 }
 
 .logo-text {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #0A0A0A;
-  letter-spacing: -0.01em;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: #0A0A0A !important;
+  letter-spacing: -0.01em !important;
 }
 
 .nav-links {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
+  display: flex !important;
+  gap: 2rem !important;
+  align-items: center !important;
 }
 
 .nav-link {
-  color: #A0A0A0;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 0.9375rem;
-  transition: color 200ms;
+  color: #A0A0A0 !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  font-size: 0.9375rem !important;
+  transition: color 200ms !important;
 }
 
 .nav-link:hover {
-  color: var(--neon-orange);
+  color: var(--neon-orange) !important;
 }
 
 .pro-link {
-  padding: 0.625rem 1.25rem;
-  background: #0A0A0A;
-  color: #FFFFFF;
-  border-radius: 8px;
-  font-weight: 600;
+  padding: 0.625rem 1.25rem !important;
+  background: #0A0A0A !important;
+  color: #FFFFFF !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  border: none !important;
 }
 
 .pro-link:hover {
-  background: var(--neon-orange);
+  background: var(--neon-orange) !important;
 }
 
 /* Phase 2 - Feature Cards */
