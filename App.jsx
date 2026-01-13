@@ -199,8 +199,8 @@ function App() {
           <article>
             {/* Abstract Mood Orb */}
             <div className="mood-orb-container" role="img" aria-label={`Bitcoin is feeling ${mood}`}>
-              <div className="data-ring ring-1"></div>
-              <div className="data-ring ring-2"></div>
+              <div className={`data-ring ring-1 ${mood}`}></div>
+              <div className={`data-ring ring-2 ${mood}`}></div>
               <div className={`mood-orb ${mood}`}></div>
             </div>
             
